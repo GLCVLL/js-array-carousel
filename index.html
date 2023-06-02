@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON -->
-    <link rel="icon" href="">
+    <link rel="icon" href="img/favicon.ico">
+    <!-- FONT AWESOME LINK -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
     <!-- JAVASCRIPT LINK -->
     <script defer src="js/script.js"></script> 
     <!-- CSS LINK -->
@@ -13,6 +15,18 @@
     <title>Carousel</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="carousel">
+            <i class="fa-regular fa-circle-up fa-xl" id="prev"></i>
+            <div class="gallery">
+                <img src="img/01.webp" alt="screen 1">
+                <img src="img/02.webp" alt="screen 2" class="active">
+                <!--<img src="img/03.webp" alt="screen 3">
+                <img src="img/04.webp" alt="screen 4">
+                <img src="img/05.webp" alt="screen 5">-->
+            </div>
+            <i class="fa-regular fa-circle-down fa-xl" id="next"></i>
+        </div>
+    </div>
 </body>
 </html>

@@ -8,4 +8,41 @@
 
 /* GENERICS */
 
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
 
+#carousel{
+    height: 400px;
+    width: 700px;
+    margin: 30px auto;
+    position: relative;
+}
+
+#carousel .gallery{
+    height: 100%;
+}
+
+#carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#carousel i{
+    position: absolute;
+    right: 50%;
+    translate: 0 -50%;
+    color: white;
+    cursor: pointer;
+}
+
+#carousel #prev{
+    top: 5%;
+}
+
+#carousel #next{
+    bottom: 5%;
+}

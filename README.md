@@ -11,7 +11,7 @@
 - do la classe .active alla prima immagine
 - *** QUANDO *** clicco sul pulsante prev 
   - **SE** mi trovo sulla prima immagine devo andare all'ultima
-  - **ALTRIMENTI** Torno all'immagine precedente.
+  - **ALTRIMENTI** vado all'immagine precedente.
 - *** QUANDO *** clicco sul pulsante next
   - **SE** mi trovo sull'ultima immagine devo andare alla prima
   - **ALTRIMENTI** vado all'immagine successiva   

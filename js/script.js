@@ -46,5 +46,39 @@ images[currentIndex].classList.add('active');
 
 /*********** LOGICA EFFETTIVA ************/
 
+// !METTO IN ASCOLTO IL PULSANTE NEXT
 
+nextButton.addEventListener('click', function(){
+    // RIMUOVO LA CLASSE ACTIVE DALL'IMMAGINE
+    images[currentIndex].classList.remove('active');
+
+    // INCREMENTO IL CURRENT INDEX
+    currentIndex++;
+
+    // SE SONO ALL'ULTIMA FOTO TORNO ALLA PRIMA
+    if (currentIndex === images.length){
+        currentIndex = 0;
+    }
+
+    // AGGIUNGO LA CLASSE ACTIVE ALLA PROSSIMA IMMAGINE
+    images[currentIndex].classList.add('active');
+});
+
+// !METTO IN ASCOLTO IL PULSANTE PREV
+
+prevButton.addEventListener('click', function(){
+    // RIMUOVO LA CLASSE ACTIVE DALL'IMMAGINE
+    images[currentIndex].classList.remove('active');
+
+    // INCREMENTO IL CURRENT INDEX
+    currentIndex--;
+
+    // SE SONO ALL'ULTIMA FOTO TORNO ALLA PRIMA
+    if (currentIndex < 0){
+        currentIndex = images.length - 1;
+    }
+
+    // AGGIUNGO LA CLASSE ACTIVE ALLA PROSSIMA IMMAGINE
+    images[currentIndex].classList.add('active');
+});
 

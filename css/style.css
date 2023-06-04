@@ -29,6 +29,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    display: none;
 }
 
 #carousel i{
@@ -45,4 +46,8 @@
 
 #carousel #next{
     bottom: 5%;
+}
+
+#carousel img.active{
+    display: block;
 }
